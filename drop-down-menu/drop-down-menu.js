@@ -1,7 +1,7 @@
 (function(jQuery){
-jQuery.fn.menuDeroulant=function(){
-           jQuery(this).each(function(){// this = premier niveau du menu, on boucle sur chaque li
-	            jQuery(this)
+   jQuery.fn.menuDeroulant=function(){
+         jQuery(this).each(function(){// this = premier niveau du menu, on boucle sur chaque li
+	        jQuery(this)
                   .mouseover(function(){
                              jQuery(this).children(".sub-menu").addClass("visible");
 	                  })
@@ -14,9 +14,9 @@ jQuery.fn.menuDeroulant=function(){
                   .focusout(function(){
                         jQuery(this).children(".sub-menu").removeClass("visible");
                   });
-           return jQuery(this); 
-     });
-	};
+           	return jQuery(this); 
+     	});
+   };
 })(jQuery); 
 
 jQuery(document).ready(function(){
