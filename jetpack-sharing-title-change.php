@@ -14,7 +14,7 @@
 				$sharing_content = str_replace ($title, $replacement, $sharing_content);
 			}
 		}
-        return 'avant '.$sharing_content.' après'; 
+        return $sharing_content; 
     }; 
              
     // add the filter 
